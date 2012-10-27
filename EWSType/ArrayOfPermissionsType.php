@@ -1,20 +1,21 @@
 <?php
 /**
- * Definition of the ArrayOfPermissionsType type
- *
- * @package php-ews
- * @subpackage Types
+ * Contains EWSType_ArrayOfPermissionsType.
  */
 
 /**
- * Definition of the ArrayOfPermissionsType type
+ * Contains the collection of permissions for a folder.
+ *
+ * @package php-ews\Types
  */
 class EWSType_ArrayOfPermissionsType extends EWSType
 {
     /**
-     * Permission property
+     * Defines the access that a delegate has to a folder.
      *
      * @var EWSType_PermissionType
+     *
+     * @since Exchange 2007 SP1
      */
     public $Permission;
 }

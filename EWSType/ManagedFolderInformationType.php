@@ -1,83 +1,104 @@
 <?php
 /**
- * Definition of the ManagedFolderInformationType type
- *
- * @package php-ews
- * @subpackage Types
+ * Contains EWSType_ManagedFolderInformationType.
  */
 
 /**
- * Definition of the ManagedFolderInformationType type
+ * Contains information about a managed custom folder.
+ *
+ * @package php-ews\Types
  */
 class EWSType_ManagedFolderInformationType extends EWSType
 {
     /**
-     * CanDelete property
+     * Indicates whether a managed folder can be deleted by a customer.
      *
      * @var boolean
+     *
+     * @since Exchange 2007
      */
     public $CanDelete;
 
     /**
-     * CanRenameOrMove property
+     * Indicates whether a given managed folder can be renamed or moved by the
+     * customer.
      *
      * @var boolean
+     *
+     * @since Exchange 2007
      */
     public $CanRenameOrMove;
 
     /**
-     * MustDisplayComment property
-     *
-     * @var boolean
-     */
-    public $MustDisplayComment;
-
-    /**
-     * HasQuota property
-     *
-     * @var boolean
-     */
-    public $HasQuota;
-
-    /**
-     * IsManagedFoldersRoot property
-     *
-     * @var boolean
-     */
-    public $IsManagedFoldersRoot;
-
-    /**
-     * ManagedFolderId property
+     * Contains the comment that is associated with a managed folder.
      *
      * @var string
-     */
-    public $ManagedFolderId;
-
-    /**
-     * Comment property
      *
-     * @var string
+     * @since Exchange 2007
      */
     public $Comment;
 
     /**
-     * StorageQuota property
+     * Describes the total size of all the contents of a managed folder.
      *
      * @var integer
-     */
-    public $StorageQuota;
-
-    /**
-     * FolderSize property
      *
-     * @var integer
+     * @since Exchange 2007
      */
     public $FolderSize;
 
     /**
-     * HomePage property
+     * Indicates whether the managed folder has a quota.
+     *
+     * @var boolean
+     *
+     * @since Exchange 2007
+     */
+    public $HasQuota;
+
+    /**
+     * Specifies the URL that will be the default home page for the managed
+     * folder.
      *
      * @var string
+     *
+     * @since Exchange 2007
      */
     public $HomePage;
+
+    /**
+     * Indicates whether the managed folder is the root for all managed folders.
+     *
+     * @var boolean
+     *
+     * @since Exchange 2007
+     */
+    public $IsManagedFoldersRoot;
+
+    /**
+     * Contains the folder ID of the managed folder.
+     *
+     * @var string
+     *
+     * @since Exchange 2007
+     */
+    public $ManagedFolderId;
+
+    /**
+     * Indicates whether the managed folder comment must be displayed.
+     *
+     * @var boolean
+     *
+     * @since Exchange 2007
+     */
+    public $MustDisplayComment;
+
+    /**
+     * Describes the storage quota for the managed folder.
+     *
+     * @var integer
+     *
+     * @since Exchange 2007
+     */
+    public $StorageQuota;
 }

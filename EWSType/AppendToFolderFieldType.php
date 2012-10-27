@@ -1,48 +1,15 @@
 <?php
 /**
- * Definition of the AppendToFolderFieldType type
- *
- * @package php-ews
- * @subpackage Types
+ * Contains EWSType_AppendToFolderFieldType.
  */
 
 /**
- * Definition of the AppendToFolderFieldType type
+ * This type element is not implemented. Any request that uses this type will
+ * always return an error response.
+ *
+ * @package php-ews\Types
  */
 class EWSType_AppendToFolderFieldType extends EWSType
 {
-    /**
-     * Folder property
-     *
-     * @var EWSType_FolderType
-     */
-    public $Folder;
 
-    /**
-     * CalendarFolder property
-     *
-     * @var EWSType_CalendarFolderType
-     */
-    public $CalendarFolder;
-
-    /**
-     * ContactsFolder property
-     *
-     * @var EWSType_ContactsFolderType
-     */
-    public $ContactsFolder;
-
-    /**
-     * SearchFolder property
-     *
-     * @var EWSType_SearchFolderType
-     */
-    public $SearchFolder;
-
-    /**
-     * TasksFolder property
-     *
-     * @var EWSType_TasksFolderType
-     */
-    public $TasksFolder;
 }
