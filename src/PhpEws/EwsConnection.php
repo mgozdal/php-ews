@@ -203,7 +203,7 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param AddDelegateType $request
+     * @param DataType\AddDelegateType $request
      * @return AddDelegateResponseMessageType
      */
     public function AddDelegate($request)
@@ -217,7 +217,7 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param ConvertIdType $request
+     * @param DataType\ConvertIdType $request
      * @return ConvertIdResponseType
      */
     public function ConvertId($request)
