@@ -10,6 +10,8 @@ required to form a request.
 __This is a forked version__ of the original GitHub project at [jamesiarmes/php-ews](/jamesiarmes/php-ews) to bring Composer installation,
 namespaces and PSR-0 autoloading of classes.
 
+__Yet Another Fork__ Noticed a few changes with the exchange server i was working with and made it up to spec to our server.
+Also improved some docblocks. All probably due to some minor exchange server version mismatch.
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/adamelso/php-ews/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/adamelso/php-ews/?branch=master)
 
