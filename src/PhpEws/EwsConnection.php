@@ -61,6 +61,13 @@ class EwsConnection
     const VERSION_2010_SP2 = 'Exchange2010_SP2';
 
     /**
+     * Microsoft Exchange 2010 SP3
+     *
+     * @var string
+     */
+    const VERSION_2010_SP3 = 'Exchange2010_SP3';
+
+    /**
      * Password to use when connecting to the Exchange server.
      *
      * @var string
@@ -273,8 +280,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param CreateFolderType $request
-     * @return CreateFolderResponseType
+     * @param DataType/CreateFolderType $request
+     * @return DataType/CreateFolderResponseType
      */
     public function CreateFolder($request)
     {
@@ -287,8 +294,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param CreateItemType $request
-     * @return CreateItemResponseType
+     * @param DataType/CreateItemType $request
+     * @return DataType/CreateItemResponseType
      */
     public function CreateItem($request)
     {
@@ -301,8 +308,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param CreateManagedFolderRequestType $request
-     * @return CreateManagedFolderResponseType
+     * @param DataType/CreateManagedFolderRequestType $request
+     * @return DataType/CreateManagedFolderResponseType
      */
     public function CreateManagedFolder($request)
     {
@@ -315,8 +322,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param DeleteAttachmentType $request
-     * @return DeleteAttachmentResponseType
+     * @param DataType/DeleteAttachmentType $request
+     * @return DataType/DeleteAttachmentResponseType
      */
     public function DeleteAttachment($request)
     {
@@ -329,8 +336,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param DeleteFolderType $request
-     * @return DeleteFolderResponseType
+     * @param DataType/DeleteFolderType $request
+     * @return DataType/DeleteFolderResponseType
      */
     public function DeleteFolder($request)
     {
@@ -343,8 +350,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param DeleteItemType $request
-     * @return DeleteItemResponseType
+     * @param DataType/DeleteItemType $request
+     * @return DataType/DeleteItemResponseType
      */
     public function DeleteItem($request)
     {
@@ -357,8 +364,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param ExpandDLType $request
-     * @return ExpandDLResponseType
+     * @param DataType/ExpandDLType $request
+     * @return DataType/ExpandDLResponseType
      */
     public function ExpandDL($request)
     {
@@ -371,8 +378,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param EWS_FindFolderType $request
-     * @return EWS_FindFolderResponseType
+     * @param DataType/EWS_FindFolderType $request
+     * @return DataType/EWS_FindFolderResponseType
      */
     public function FindFolder($request)
     {
@@ -385,8 +392,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param FindItemType $request
-     * @return FindItemResponseType
+     * @param DataType/FindItemType $request
+     * @return DataType/FindItemResponseType
      */
     public function FindItem($request)
     {
@@ -399,8 +406,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param GetAttachmentType $request
-     * @return GetAttachmentResponseType
+     * @param DataType/GetAttachmentType $request
+     * @return DataType/GetAttachmentResponseType
      */
     public function GetAttachment($request)
     {
@@ -413,8 +420,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param GetDelegateType $request
-     * @return GetDelegateResponseMessageType
+     * @param DataType/GetDelegateType $request
+     * @return DataType/GetDelegateResponseMessageType
      */
     public function GetDelegate($request)
     {
@@ -427,8 +434,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param GetEventsType $request
-     * @return GetEventsResponseType
+     * @param DataType/GetEventsType $request
+     * @return DataType/GetEventsResponseType
      */
     public function GetEvents($request)
     {
@@ -441,8 +448,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param GetFolderType $request
-     * @return GetFolderResponseType
+     * @param DataType/GetFolderType $request
+     * @return DataType/GetFolderResponseType
      */
     public function GetFolder($request)
     {
@@ -455,8 +462,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param GetItemType $request
-     * @return GetItemResponseType
+     * @param DataType/GetItemType $request
+     * @return DataType/GetItemResponseType
      */
     public function GetItem($request)
     {
@@ -469,8 +476,8 @@ class EwsConnection
     /**
      * Retrieve the timezones supported by the server.
      *
-     * @param GetServerTimeZonesType $request
-     * @return GetServerTimeZonesResponseType
+     * @param DataType/GetServerTimeZonesType $request
+     * @return DataType/GetServerTimeZonesResponseType
      *
      * @since Exchange2010
      */
@@ -485,8 +492,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param GetUserAvailabilityRequestType $request
-     * @return GetUserAvailabilityResponseType
+     * @param DataType/GetUserAvailabilityRequestType $request
+     * @return DataType/GetUserAvailabilityResponseType
      */
     public function GetUserAvailability($request)
     {
@@ -499,8 +506,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param GetUserOofSettingsRequest $request
-     * @return GetUserOofSettingsResponse
+     * @param DataType/GetUserOofSettingsRequest $request
+     * @return DataType/GetUserOofSettingsResponse
      */
     public function GetUserOofSettings($request)
     {
@@ -513,8 +520,8 @@ class EwsConnection
     /**
      * Function Description
      *
-     * @param MoveFolderType $request
-     * @return MoveFolderResponseType
+     * @param DataType/MoveFolderType $request
+     * @return DataType/MoveFolderResponseType
      */
     public function MoveFolder($request)
     {
