@@ -12,15 +12,15 @@ class MoveItemType extends DataType
     /**
      * SavedItemFolderId property
      *
-     * @var DataType\DistinguishedFolderIdType
+     * @var DistinguishedFolderIdType
      */
     public $ToFolderId;
 
     /**
      * Items property
      *
-     * @var NonEmptyArrayOfAllItemsType
+     * @var NonEmptyArrayOfBaseItemIdsType
      */
-    public $Items;
+    public $ItemIds;
 
 }
