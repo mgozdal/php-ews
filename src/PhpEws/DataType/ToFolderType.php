@@ -8,7 +8,7 @@ use PhpEws\DataType;
  * Definition of the ToFolderType type
  * @see https://msdn.microsoft.com/en-us/library/office/aa565020(v=exchg.150).aspx
  */
-class ToFolderType extends DataType
+class ToFolderType extends BaseDelegateType
 {
     /**
      * Identifies a named destination folder for a copied or moved item or folder.
