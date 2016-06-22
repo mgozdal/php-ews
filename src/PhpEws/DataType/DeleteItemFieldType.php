@@ -15,7 +15,7 @@ class DeleteItemFieldType extends DataType
      * @var PathToExtendedFieldType
      */
     public $ExtendedFieldURI;
-§
+    
     /**
      * Identifies frequently referenced properties by URI.
      *
